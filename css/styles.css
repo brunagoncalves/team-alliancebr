@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #161B22;
+  color: #F1F1F1;
+  font-family: 'Teko', sans-serif;
+}
+
+.container {
+  max-width: 992px;
+  height: 100vh;
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.25%;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.social {
+  text-align: center;
+}
+
+.social>p {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #99BA33;
+  display: flex;
+  padding: 1.5rem;
+  transition: 0.3s;
+}
+
+.links a:first-child:hover {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0.2);
+}
+
+.links a:last-child:hover {
+  color: #C4302B;
+}
+
+.links>a>img {
+  width: 24px;
+  margin-right: 1rem;
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
